@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Enrollment Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="box">
+        <div class="headinggg">
+            <h1>Student Enrollment Form</h1>
+        </div>
+        <div class="container">
+            <div class="form">
+                <!-- <h2>Enrollment Form</h2> -->
+                <form autocomplete="off">
+                    <div class="name">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="email">
+                        <label for="email">Email</label>
+                        <input type="email" id="email"  required>
+                    </div>
+                    <div class="website">
+                        <label for="website">Website</label>
+                        <input type="url" id="website" required>
+                    </div>
+                    <div class="image">
+                        <label for="url" >Image link</label>
+                        <input type="url" id="url"  required>
+                    </div>
+                    <div class="gender">
+                        <label for="gender">Gender</label>
+                        <span class="text-p">
+                            <label>
+                                <input type="radio" name="male-female" id="male" value="Male" required>
+                                Male
+                            </label>
+                            <br>
+                            <label>
+                                <input type="radio" name="male-female" id="female" value="Female"required>
+                                Female
+                            </label>                           
+                        </span>
+                    </div>
+                    <div class="skills">
+                        <label for="skills">Skills</label>
+                        <span class="text-p">
+                            <label><input type="checkbox" value="Java" id="css"
+                                class="checkbox">Java</label>
+                            <label><input type="checkbox" value="HTML" id="html" class="checkbox">HTML</label>
+                            <label><input type="checkbox" value="CSS" id="css" class="checkbox">CSS</label>                            
+                        </span>
+                    </div>
+                    <div class="button">
+                        <button type="submit" id="submit">Enroll Student</button>
+                        <button type="reset" id="reset">Clear</button>
+                    </div>
+                </form>
+            </div>
+            <div class="line"></div>
+            <div class="op-box">
+                <div class="output">
+                    <h2>Enrolled Students</h2>
+                    <div class="cardContainer" id="cardContainer">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div id="copyright1" style="position: sticky;
+        margin:0px;
+        top: 0;
+        height: 4vh;
+        background-color: rgb(42, 165, 118);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: solid aquamarine 2px;">
+            
+            
+            <p style="color: white;
+            font-family: Arial;
+            font-size: 12px;
+            font-weight: 400;
+            user-select: none;">Copyright 2020-2021 by Fresher Training<p>
+        </div>
+    </div>
+
+    <script defer src="main.js"></script>
+</body>
+
+</html>
